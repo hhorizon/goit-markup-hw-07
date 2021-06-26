@@ -1,0 +1,36 @@
+.quality {
+  padding-bottom: 0;
+}
+
+.quality-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__desc {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03;
+    color: var(--grey-color);
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    height: 120px;
+
+    background-color: #f5f4fa;
+  }
+}

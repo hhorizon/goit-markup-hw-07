@@ -1,0 +1,31 @@
+.work-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+
+    padding: 27px 0;
+    width: 100%;
+    height: 70px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
