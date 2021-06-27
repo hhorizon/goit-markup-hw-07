@@ -2,48 +2,27 @@
   border-bottom: 1px solid #eeeeee;
   padding: 25px 0;
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__nav-list {
+  &__nav {
     margin: 0;
     margin-left: 93px;
   }
 
-  &__current-page {
-    display: block;
-    position: relative;
-
-    color: var(--brand-color);
-  }
-
-  &__current-page::after {
-    display: inline-block;
-    position: absolute;
-    bottom: -32px;
-    left: 0;
-
-    content: "";
-    width: 100%;
-
-    background: #2196f3;
-    border: 2px solid;
-    border-radius: 2px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .nav {
   display: flex;
-}
 
-.nav-list {
-  display: flex;
-  align-items: center;
+  &__list {
+    display: flex;
+    align-items: center;
 
-  padding: 0;
+    padding: 0;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -54,11 +33,34 @@
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
+
+    &--current {
+      display: block;
+      position: relative;
+
+      color: var(--brand-color);
+    }
+
+    &--current::after {
+      display: inline-block;
+      position: absolute;
+      bottom: -32px;
+      left: 0;
+
+      content: "";
+      width: 100%;
+
+      background: #2196f3;
+      border: 2px solid;
+      border-radius: 2px;
+    }
   }
 }
 
-.contacts-list {
-  display: flex;
+.contacts {
+  &__list {
+    display: flex;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -80,21 +82,21 @@
     height: 16px;
     width: 10px;
   }
-}
 
-.contacts-list__link {
-  display: flex;
-  align-items: center;
+  &__link {
+    display: flex;
+    align-items: center;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
 
-  color: var(--grey-color);
+    color: var(--grey-color);
 
-  &:hover .contacts-list__icon,
-  &:focus .contacts-list__icon {
-    fill: var(--brand-color);
+    &:hover .contacts__icon,
+    &:focus .contacts__icon {
+      fill: var(--brand-color);
+    }
   }
 }

@@ -1,10 +1,10 @@
 .quality {
   padding-bottom: 0;
-}
 
-.quality-list {
-  display: flex;
-  justify-content: space-between;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__item:not(:last-child) {
     margin-right: 30px;

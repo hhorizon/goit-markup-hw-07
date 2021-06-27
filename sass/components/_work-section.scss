@@ -1,6 +1,8 @@
-.work-list {
-  display: flex;
-  justify-content: space-between;
+.work {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__item {
     position: relative;

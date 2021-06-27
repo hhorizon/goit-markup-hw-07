@@ -1,6 +1,8 @@
-.socialmedia-list {
-  display: flex;
-  justify-content: center;
+.socialmedia {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
 
   &__item:not(:last-child) {
     margin-right: 10px;
@@ -33,14 +35,14 @@
   }
 }
 
-.socialmedia-list__link_color_grey {
+.socialmedia__link--color--grey {
   color: var(--icon-color);
 }
 
-.social-links-list__link_color_white {
+.socialmedia__link--color--white {
   color: var(--white-color);
 }
 
-.social-links-list__link_backcolor_grey {
+.socialmedia__link--backcolor--grey {
   background-color: rgba(255, 255, 255, 0.1);
 }
